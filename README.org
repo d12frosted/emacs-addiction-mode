@@ -1,0 +1,45 @@
+* =emacs-addiction-mode=
+
+Keybinding for killing Emacs is an awful joke. It should not exist in the first
+place. If I wanted to exit Emacs, I would call a doctor.
+
+=emacs-addiction-mode= comes into play. Quit killing Emacs. Raise your addiction
+level and be happy about it.
+
+Call =emacs-addiction-mode= to turn it locally. Call
+=global-emacs-addiction-mode= to turn it globally. Set your
+=emacs-addiction-level= and conquer this Universe.
+
+Available levels:
+
+- =neophyte= - your addiction is new, so you are still unsure. You will be
+  prompted if you really want to quit Emacs.
+- =sane= - you are a sane person. On any attempt to kill Emacs you will be brought
+  straight to the psychotherapist.
+- =brian= - you 'always look on the bright side of life'. So you don't need to
+  kill Emacs anymore.
+
+** Installation
+
+*** MELPA
+
+This package is not yet available on MELPA.
+
+*** Quelpa
+
+#+BEGIN_SRC emacs-lisp
+  (quelpa '(hydra :repo "d12frosted/emacs-addiction-mode" :fetcher github))
+#+END_SRC
+
+** Example
+
+#+BEGIN_SRC emacs-lisp
+  (require 'emacs-addiction-mode)
+  (global-emacs-addiction-mode)
+  (setq emacs-addiction-level 'brian)
+#+END_SRC
+
+** Contributing
+
+Don’t hesitate to ask questions, to report bugs or suggest new features. And
+most importantly, PRs are welcome!

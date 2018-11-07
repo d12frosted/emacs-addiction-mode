@@ -13,25 +13,25 @@
 ;;; Commentary:
 ;;
 ;; Keybinding for killing Emacs is an awful joke. It should not exist in the
-;; first place. If I want to exit Emacs, I'd call a doctor.
+;; first place. If I wanted to exit Emacs, I would call a doctor.
 ;;
 ;; `emacs-addiction-mode' comes into play. Quit killing Emacs. Raise your
 ;; addiction level and be happy about it.
 ;;
 ;; Call `emacs-addiction-mode' to turn it locally. Call
-;; `global-emacs-addiction-mode' to turn it globally. Set your level by
-;; modifying `emacs-addiction-level'.
+;; `global-emacs-addiction-mode' to turn it globally. Set your
+;; `emacs-addiction-level' and conquer this Universe.
 ;;
 ;; Available levels:
 ;;
 ;; - neophyte - your addiction is new, so you are still unsure. You will be
 ;;   prompted if you really want to quit Emacs.
 ;;
-;; - sane - you are a sane person. Instead of killing Emacs you will be brought
-;;   straight to the psychotherapist.
+;; - sane - On any attempt to kill Emacs you will be brought straight to the
+;;   psychotherapist.
 ;;
-;; - brian - 'always look on the bright side of life'. You don't need to kill
-;;   Emacs.
+;; - brian - you 'always look on the bright side of life'. So you don't need to
+;;   kill Emacs.
 ;;
 ;;; Code:
 ;;
@@ -46,7 +46,7 @@ the mode, `toggle' toggles the state.
 
 When Emacs addiction mode is enabled, you can't quit Emacs.
 
-Literally."
+Literally. Depending on your `emacs-addiction-level'."
   :init-value nil
   :lighter " Addiction"
   :keymap '()
