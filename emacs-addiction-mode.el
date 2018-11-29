@@ -52,31 +52,6 @@ Literally. Depending on your `emacs-addiction-level'."
   :keymap '()
   :group 'emacs-addiction)
 
-(define-key emacs-addiction-mode-map
-  (kbd "C-x C-c")
-  #'emacs-addiction-quit)
-
-(define-globalized-minor-mode
-  global-emacs-addiction-mode
-  emacs-addiction-mode
-  (lambda ()
-    (emacs-addiction-mode 1)))
-
-(define-minor-mode emacs-addiction-mode
-  "Toggle Emacs addiction mode.
-
-Interactively with no argument, this command toggles the mode. A
-positive prefix argument enables the mode, any other prefix
-argument disables it. From Lisp, argument omitted or nil enables
-the mode, `toggle' toggles the state.
-
-When Emacs addiction mode is enabled, you can't quit Emacs.
-
-Literally. Based on your `emacs-addiction-level'."
-  :init-value nil
-  :lighter " Addiction"
-  :keymap '())
-
 (define-globalized-minor-mode
   global-emacs-addiction-mode
   emacs-addiction-mode
@@ -111,11 +86,11 @@ Available levels:
           (const :tag "Always look on the bright side of life" brian)))
 
 (defun emacs-addiction-kill ()
-  "Kill Emacs depending on your `emacs-addiction-level'"
+  "Kill Emacs depending on your `emacs-addiction-level'."
   (interactive)
   (pcase emacs-addiction-level
-    ('barbarian (emacs-addiction-kill-as-barbarian))
     ('neophyte (emacs-addiction-kill-as-neophyte))
+    ('sane (emacs-addiction-kill-as-sane))
     ('brian (emacs-addiction-kill-as-brian))))
 
 (defun emacs-addiction-kill-as-neophyte ()
