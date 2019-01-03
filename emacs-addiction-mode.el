@@ -97,7 +97,7 @@ Available levels:
   "Kill Emacs as a neophyte."
   (interactive)
   (when (y-or-n-p "Are you sure you want to betray your addiction and kill Emacs? ")
-    (kill-emacs)))
+    (save-buffers-kill-emacs)))
 
 (defun emacs-addiction-kill-as-sane ()
   "Kill Emacs as a sane person."
