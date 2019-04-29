@@ -14,8 +14,8 @@ Available levels:
 
 - =neophyte= - your addiction is new, so you are still unsure. You will be
   prompted if you really want to quit Emacs.
-- =sane= - you are a sane person. On any attempt to kill Emacs you will be brought
-  straight to the psychotherapist.
+- =sane= - you are a sane person. On any attempt to kill Emacs you will be
+  brought straight to the psychotherapist.
 - =brian= - you 'always look on the bright side of life'. So you don't need to
   kill Emacs anymore.
 
