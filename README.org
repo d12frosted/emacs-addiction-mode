@@ -41,5 +41,12 @@ This package is not yet available on MELPA.
 
 ** Contributing
 
-Don’t hesitate to ask questions, to report bugs or suggest new features. And
-most importantly, PRs are welcome!
+Everyone is welcome to contribute to =emacs-addiction-mode= project. Feature
+requests, proposals, issue reports, documentation improvements, code patches -
+just to name few things that the project can gain from.
+
+Please note that the main upstream of =emacs-addiction-mode= is located on
+[[https://gitlab.com/d12frosted/emacs-addiction-mode][GitLab]], and it's advisable to send your contributions there. But they can be
+accepted also via [[mailto:boris@d12frosted.io][email]] and [[https://github.com/d12frosted/emacs-addiction-mode][GitHub]].
+
+Happy hacking!
