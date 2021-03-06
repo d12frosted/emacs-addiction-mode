@@ -1,4 +1,7 @@
 * =emacs-addiction-mode=
+:PROPERTIES:
+:ID:                     b2df1b4f-7051-4a65-ad19-29c7d1f8d23c
+:END:
 
 Keybinding for killing Emacs is an awful joke. It should not exist in the first
 place. If I wanted to exit Emacs, I would call a doctor.
@@ -20,18 +23,50 @@ Available levels:
   kill Emacs anymore.
 
 ** Installation
+:PROPERTIES:
+:ID:                     c276874b-7f85-4ee9-8525-457a3a90bc4e
+:END:
 
 *** MELPA
+:PROPERTIES:
+:ID:                     d16cfdf7-8a85-48f7-88b3-070186603941
+:END:
 
 This package is not yet available on MELPA.
 
 *** Quelpa
+:PROPERTIES:
+:ID:                     45228272-e633-4290-9b8c-88826be0b11e
+:END:
 
 #+BEGIN_SRC emacs-lisp
-  (quelpa '(hydra :repo "d12frosted/emacs-addiction-mode" :fetcher github))
+  (quelpa '(emacs-addiction-mode :repo "d12frosted/emacs-addiction-mode" :fetcher github))
 #+END_SRC
 
+*** straight.el
+:PROPERTIES:
+:ID:                     2beccee5-417a-4053-8275-217f41dedcca
+:END:
+
+#+begin_src emacs-lisp
+  (straight-use-package
+   '(emacs-addiction-mode :type git :host github :repo "d12frosted/emacs-addiction-mode"))
+#+end_src
+
+In case you have [[https://github.com/raxod502/straight.el/#integration-with-use-package][integration]] with [[https://github.com/jwiegley/use-package][use-package]]:
+
+#+begin_src emacs-lisp
+  (use-package emacs-addiction-mode
+    :straight (emacs-addiction-mode
+               :type git
+               :host github
+               :repo "d12frosted/emacs-addiction-mode"))
+#+end_src
+
 ** Example
+:PROPERTIES:
+:ID:                     51e21205-6e47-4466-a5fc-35a2e7dccd50
+:END:
 
 #+BEGIN_SRC emacs-lisp
   (require 'emacs-addiction-mode)
@@ -40,13 +75,12 @@ This package is not yet available on MELPA.
 #+END_SRC
 
 ** Contributing
+:PROPERTIES:
+:ID:                     5dd81ea0-4c42-42b9-a574-a2a260cb663d
+:END:
 
 Everyone is welcome to contribute to =emacs-addiction-mode= project. Feature
 requests, proposals, issue reports, documentation improvements, code patches -
 just to name few things that the project can gain from.
-
-Please note that the main upstream of =emacs-addiction-mode= is located on
-[[https://gitlab.com/d12frosted/emacs-addiction-mode][GitLab]], and it's advisable to send your contributions there. But they can be
-accepted also via [[mailto:boris@d12frosted.io][email]] and [[https://github.com/d12frosted/emacs-addiction-mode][GitHub]].
 
 Happy hacking!
