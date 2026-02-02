@@ -1,3 +1,9 @@
+#+begin_html
+<p align="center">
+  <a href="https://github.com/sponsors/d12frosted"><img alt="Sponsor" src="https://img.shields.io/badge/Sponsor-d12frosted-pink?logo=githubsponsors&logoColor=white"/></a>
+</p>
+#+end_html
+
 * =emacs-addiction-mode=
 :PROPERTIES:
 :ID:                     b2df1b4f-7051-4a65-ad19-29c7d1f8d23c
@@ -84,3 +90,7 @@ requests, proposals, issue reports, documentation improvements, code patches -
 just to name few things that the project can gain from.
 
 Happy hacking!
+
+* Support
+
+If you enjoy this project, you can support its development via [[https://github.com/sponsors/d12frosted][GitHub Sponsors]] or [[https://www.patreon.com/d12frosted][Patreon]].
